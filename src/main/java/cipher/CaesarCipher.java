@@ -102,7 +102,7 @@ public class CaesarCipher {
         }
         int count = 0;
         for (char c : text.toCharArray()) {
-            if (c >= 'a' && c <= 'z') {
+            if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
                 count++;
             }
         }
